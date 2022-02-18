@@ -1,0 +1,244 @@
+/*Global*/
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #072C30;
+    color: #F7F5FB;
+}
+
+
+@font-face {
+    font-family: "Futura";
+    src: url("/Futura Book font.ttf") format("ttf");
+}
+
+img.bg{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("/IMG/lines.jpg");
+    background-size: 100% 100%;
+    opacity: .02;
+}
+
+/*Navigation*/
+.navContainer{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-left: -.5em;
+    margin-top: -.5em;
+    width: 101%;
+    background-color: #072C30;
+    box-shadow: 0 .01em 1em 0px black;
+    padding: 1em;
+}
+
+.logo{
+    margin-top: .5em;
+    margin-left: -25em;
+
+}
+
+.logoLink{
+    text-decoration: none;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    margin-right: -35em;
+}
+
+.navigationList{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: .5em;
+}
+
+.navigationList>a{
+    margin-right: 2em;
+    font-family: "Glegoo", serif;
+    color: #C2BABA;
+    text-decoration: none;
+}
+
+.navigationList:last-child{
+    margin-right: 10em;
+}
+
+.navigationList>a>li::marker{
+    color:#3E8DB9;
+}
+
+.navigationList>a:hover{
+    color:#3E8DB9;
+    cursor: pointer;
+}
+
+/*Hero Section*/
+.hero{
+    margin-top: 19%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    font-family: "Glegoo", serif;
+    font-weight: 200;
+    font-size: 3.5em;
+}
+
+.hook{
+    margin-top: -2%;
+    font-family: "Futura", sans-serif;
+    font-weight: 100;
+    color: #44A1D4;
+    letter-spacing: .01em;
+}
+
+.bio{
+    width: 50%;
+    margin-left: 2%;
+    font-family: "Futura", sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+
+/*About Section*/
+
+.aboutMe{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    background-color: #121414;
+    padding: 1.5%;
+    border-radius: .5em;
+    box-shadow: 0 .1em .75em 0px #041e20;
+    margin-top: 40%;
+}
+
+.aboutTitle{
+    font-family: "Glegoo", serif;
+    font-weight: 500;
+    font-size: 2em;
+    margin-top: -.2%;
+    color: #C2BABA;
+}
+
+.aboutMe>p{
+    font-family: "Futura", sans-serif;
+    font-weight: 100;
+    letter-spacing: .01em;
+}
+
+.solutions, .aboutNumber{
+    color: #44A1D4;
+}
+
+.tech{
+    columns: 2;
+    font-family: "Glegoo", serif;
+}
+
+.tech>li::marker{
+    color: #44A1D4;
+}
+
+.xp{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    background-color: #121414;
+    padding: 1.5%;
+    border-radius: .5em;
+    box-shadow: 0 .1em .75em 0px #041e20;
+    margin-top: 35%;
+}
+
+.xpTitle{
+    font-family: "Glegoo", serif;
+    font-weight: 500;
+    font-size: 2em;
+    margin-top: -.2%;
+    color: #C2BABA;
+}
+
+.xp>p{
+    font-family: "Futura", sans-serif;
+    font-weight: 100;
+    letter-spacing: .01em;
+}
+
+.xpNumber{
+    color: #44A1D4;
+}
+
+.comingSoon{
+    text-align: center;
+    font-family: "Glegoo", serif;
+    letter-spacing: .2em;
+    margin-top: 2em;
+}
+
+.work{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: auto;
+    margin-top: 35%;
+}
+
+.workTitle{
+    font-family: "Glegoo", serif;
+    font-weight: 500;
+    font-size: 2em;
+    margin-top: -.2%;
+    color: #C2BABA;
+}
+
+.workNumber{
+    color: #44A1D4;
+}
+
+img.github{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    filter: invert(1);
+}
+
+img.github:hover{
+    filter: grayscale(1%);
+}
+
+img.twitter{
+    position: fixed;
+    bottom: 20px;
+    left: 80px;
+    filter: invert(1);
+}
+
+img.twitter:hover{
+    filter: grayscale(1%);
+}
+
+img.linkedin{
+    position: fixed;
+    bottom: 20px;
+    left: 140px;
+    filter: invert(1);
+}
+
+img.linkedin:hover{
+    filter: grayscale(1%);
+}
