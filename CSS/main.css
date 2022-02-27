@@ -217,7 +217,7 @@ img.github{
 }
 
 img.github:hover{
-    filter: grayscale(1%);
+    filter: invert(48%) sepia(66%) saturate(411%) hue-rotate(157deg) brightness(92%) contrast(92%);
 }
 
 img.twitter{
@@ -228,7 +228,7 @@ img.twitter{
 }
 
 img.twitter:hover{
-    filter: grayscale(1%);
+    filter: invert(48%) sepia(66%) saturate(411%) hue-rotate(157deg) brightness(92%) contrast(92%);
 }
 
 img.linkedin{
@@ -239,5 +239,5 @@ img.linkedin{
 }
 
 img.linkedin:hover{
-    filter: grayscale(1%);
+    filter: invert(48%) sepia(66%) saturate(411%) hue-rotate(157deg) brightness(92%) contrast(92%);
 }
