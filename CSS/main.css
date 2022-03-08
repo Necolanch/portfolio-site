@@ -1,20 +1,21 @@
 /*Global*/
-html{
+
+html {
     scroll-behavior: smooth;
+    scroll-padding-top: 15em;
 }
 
-body{
+body {
     background-color: #072C30;
     color: #F7F5FB;
 }
-
 
 @font-face {
     font-family: "Futura";
     src: url("/Futura Book font.ttf") format("ttf");
 }
 
-img.bg{
+img.bg {
     position: fixed;
     top: 0;
     left: 0;
@@ -22,98 +23,82 @@ img.bg{
     height: 100vh;
     background-size: 100% 100%;
     opacity: .02;
+    z-index: -1;
 }
+
 
 /*Navigation*/
-.navContainer{
-    position: fixed;
+
+.navContainer {
+    display: flex;
+    position: sticky;
     top: 0;
-    display: flex;
-    justify-content: space-around;
-    margin-left: -.5em;
-    margin-top: -.5em;
-    width: 101%;
-    background-color: #072C30;
+    justify-content: space-between;
+    align-items: center;
     box-shadow: 0 .01em 1em 0px black;
-    padding: 1em;
+    background-color: #072C30;
+    padding: 1em 3em;
+    z-index: 9999;
 }
 
-.logo{
-    margin-top: .5em;
-    margin-left: -25em;
-
-}
-
-.logoLink{
-    text-decoration: none;
-}
-
-.navigation{
+.navigationList {
     display: flex;
-    align-items: center;
-    margin-right: -35em;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
-.navigationList{
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-bottom: .5em;
+.navigationList>a>li::marker{
+    color: #44A1D4;
 }
 
-.navigationList>a{
-    margin-right: 2em;
+.navigationList>a {
     font-family: "Glegoo", serif;
     color: #C2BABA;
     text-decoration: none;
 }
 
-.navigationList:last-child{
-    margin-right: 10em;
-}
-
-.navigationList>a>li::marker{
-    color:#3E8DB9;
-}
-
-.navigationList>a:hover{
-    color:#3E8DB9;
+.navigationList>a:hover {
+    color: #3E8DB9;
     cursor: pointer;
 }
 
+
 /*Hero Section*/
-.hero{
-    margin-top: 19%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+.hero {
+    height: 90vh;
+    display: grid;
+    box-sizing: border-box;
+    place-content: center;
+    text-align: center;
+    justify-items: center;
 }
 
 .name {
+    margin-bottom: 20px;
     font-family: "Glegoo", serif;
     font-weight: 200;
     font-size: 3.5em;
 }
 
-.hook{
-    margin-top: -2%;
+.hook {
+    margin-bottom: 1rem;
     font-family: "Futura", sans-serif;
     font-weight: 100;
     color: #44A1D4;
     letter-spacing: .01em;
 }
 
-.bio{
+.bio {
     width: 50%;
-    margin-left: 2%;
     font-family: "Futura", sans-serif;
     font-weight: 100;
-    text-align: center;
 }
+
 
 /*About Section*/
 
-.aboutMe{
+.aboutMe {
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -125,7 +110,7 @@ img.bg{
     margin-top: 40%;
 }
 
-.aboutTitle{
+.aboutTitle {
     font-family: "Glegoo", serif;
     font-weight: 500;
     font-size: 2em;
@@ -133,26 +118,27 @@ img.bg{
     color: #C2BABA;
 }
 
-.aboutMe>p{
+.aboutMe>p {
     font-family: "Futura", sans-serif;
     font-weight: 100;
     letter-spacing: .01em;
 }
 
-.solutions, .aboutNumber{
+.solutions,
+.aboutNumber {
     color: #44A1D4;
 }
 
-.tech{
+.tech {
     columns: 2;
     font-family: "Glegoo", serif;
 }
 
-.tech>li::marker{
+.tech>li::marker {
     color: #44A1D4;
 }
 
-.xp{
+.xp {
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -161,10 +147,10 @@ img.bg{
     padding: 1.5%;
     border-radius: .5em;
     box-shadow: 0 .1em .75em 0px #041e20;
-    margin-top: 35%;
+    margin-top: 40%;
 }
 
-.xpTitle{
+.xpTitle {
     font-family: "Glegoo", serif;
     font-weight: 500;
     font-size: 2em;
@@ -172,24 +158,24 @@ img.bg{
     color: #C2BABA;
 }
 
-.xp>p{
+.xp>p {
     font-family: "Futura", sans-serif;
     font-weight: 100;
     letter-spacing: .01em;
 }
 
-.xpNumber{
+.xpNumber {
     color: #44A1D4;
 }
 
-.comingSoon{
+.comingSoon {
     text-align: center;
     font-family: "Glegoo", serif;
     letter-spacing: .2em;
     margin-top: 2em;
 }
 
-.work{
+.work {
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -197,7 +183,7 @@ img.bg{
     margin-top: 35%;
 }
 
-.workTitle{
+.workTitle {
     font-family: "Glegoo", serif;
     font-weight: 500;
     font-size: 2em;
@@ -205,39 +191,53 @@ img.bg{
     color: #C2BABA;
 }
 
-.workNumber{
+.workNumber {
     color: #44A1D4;
 }
 
-img.github{
+img.github {
     position: fixed;
     bottom: 20px;
     left: 20px;
     filter: invert(1);
 }
 
-img.github:hover{
+img.github:hover {
     filter: invert(48%) sepia(66%) saturate(411%) hue-rotate(157deg) brightness(92%) contrast(92%);
 }
 
-img.twitter{
+img.twitter {
     position: fixed;
     bottom: 20px;
     left: 80px;
     filter: invert(1);
 }
 
-img.twitter:hover{
+img.twitter:hover {
     filter: invert(48%) sepia(66%) saturate(411%) hue-rotate(157deg) brightness(92%) contrast(92%);
 }
 
-img.linkedin{
+img.linkedin {
     position: fixed;
     bottom: 20px;
     left: 140px;
     filter: invert(1);
 }
 
-img.linkedin:hover{
+img.linkedin:hover {
     filter: invert(48%) sepia(66%) saturate(411%) hue-rotate(157deg) brightness(92%) contrast(92%);
+}
+
+@media screen and (max-width:376px){
+    .logo{
+        width: 5em;
+        height: 3em;
+    }
+    .navContainer{
+        padding: .25em 3em;
+    }
+    .navigationList{
+        position: relative;
+        left: 2em;
+    }
 }
