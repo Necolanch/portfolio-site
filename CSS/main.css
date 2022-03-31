@@ -298,6 +298,30 @@ img.linkedin:hover {
         line-height: 1.5em;
         letter-spacing: .05em;
     }
+
+    .socials {
+        margin-top: 2em;
+        margin-left: -10em;
+        display: flex;
+        justify-content: center;
+    }
+
+    img.github {
+        position: relative;
+        margin-bottom: -3em;
+        filter: invert(1);
+    }
+
+    img.twitter {
+        position: relative;
+        margin-bottom: -3em;
+        filter: invert(1);
+    }
+
+    img.linkedin {
+        position: relative;
+        filter: invert(1);
+    }
 }
 
 @media screen and (min-width:375px) and (max-width:809px) {
