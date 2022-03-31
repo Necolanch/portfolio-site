@@ -243,6 +243,12 @@ img.linkedin:hover {
     }
 }
 
+@media screen and (min-width:320px) and (max-width:374px) {
+    .tech {
+        columns: 1;
+    }
+}
+
 @media screen and (min-width:320px) and (max-width:561px) {
 
     /*Navigation*/
