@@ -243,7 +243,7 @@ img.linkedin:hover {
     }
 }
 
-@media screen and (min-width:375px) and (max-width:561px) {
+@media screen and (min-width:320px) and (max-width:561px) {
 
     /*Navigation*/
     .logo {
@@ -266,7 +266,7 @@ img.linkedin:hover {
     }
 }
 
-@media screen and (min-width:375px) and (max-width:1200px) {
+@media screen and (min-width:320px) and (max-width:1200px) {
 
     /*About*/
     .aboutMe {
@@ -324,7 +324,7 @@ img.linkedin:hover {
     }
 }
 
-@media screen and (min-width:375px) and (max-width:809px) {
+@media screen and (min-width:320px) and (max-width:809px) {
     .aboutMe>p {
         font-size: .85em;
     }
