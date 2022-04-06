@@ -5,11 +5,6 @@ aboutTab.addEventListener("click",()=>{
     aboutSection.scrollIntoView({behavior:"smooth"});
 })
 
-aboutTab.addEventListener("touchstart",(e)=>{
-    e.preventDefault();
-    aboutSection.scrollIntoView({behavior:"smooth"});
-})
-
 const xpTab = document.querySelector(".xpTab");
 const xpSection = document.querySelector(".xp");
 
