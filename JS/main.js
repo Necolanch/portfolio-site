@@ -5,7 +5,8 @@ aboutTab.addEventListener("click",()=>{
     aboutSection.scrollIntoView({behavior:"smooth"});
 })
 
-aboutTab.addEventListener("touchstart",()=>{
+aboutTab.addEventListener("touchstart",(e)=>{
+    e.preventDefault();
     aboutSection.scrollIntoView({behavior:"smooth"});
 })
 
