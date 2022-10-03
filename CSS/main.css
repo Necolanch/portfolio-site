@@ -341,4 +341,8 @@ img.linkedin:hover {
     .xp>p {
         font-size: .85em;
     }
+
+    .searcher-pic{
+        height:10%
+    }
 }
