@@ -98,7 +98,7 @@ img.bg {
 
 /*About Section*/
 
-.aboutMe {
+.aboutMe, .xp, .work {
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -107,7 +107,10 @@ img.bg {
     padding: 1.5%;
     border-radius: .5em;
     box-shadow: 0 .1em .75em 0px #041e20;
-    margin-top: 10%;
+}
+
+.aboutMe{
+    margin-top:10%;
 }
 
 .aboutTitle {
@@ -118,14 +121,14 @@ img.bg {
     color: #C2BABA;
 }
 
-.aboutMe>p {
+.aboutMe>p, .xp>p, .work>ul {
     font-family: "Futura", sans-serif;
     font-weight: 100;
     letter-spacing: .01em;
 }
 
 .solutions,
-.aboutNumber {
+.aboutNumber, .xpNumber, .workNumber {
     color: #44A1D4;
 }
 
@@ -139,34 +142,16 @@ img.bg {
 }
 
 /*Experience*/
-.xp {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    margin: auto;
-    background-color: #121414;
-    padding: 1.5%;
-    border-radius: .5em;
-    box-shadow: 0 .1em .75em 0px #041e20;
+.xp, .work {
     margin-top: 20%;
 }
 
-.xpTitle {
+.xpTitle, .workTitle {
     font-family: "Glegoo", serif;
     font-weight: 500;
     font-size: 2em;
     margin-top: -.2%;
     color: #C2BABA;
-}
-
-.xp>p {
-    font-family: "Futura", sans-serif;
-    font-weight: 100;
-    letter-spacing: .01em;
-}
-
-.xpNumber {
-    color: #44A1D4;
 }
 
 .comingSoon {
@@ -176,24 +161,40 @@ img.bg {
     margin-top: 2em;
 }
 
-.work {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    margin: auto;
-    margin-top: 20%;
+.work{
+    margin-bottom:10%;
 }
 
-.workTitle {
-    font-family: "Glegoo", serif;
-    font-weight: 500;
-    font-size: 2em;
-    margin-top: -.2%;
-    color: #C2BABA;
+.examples{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    text-align:center;
+    margin-right:3em;
 }
 
-.workNumber {
-    color: #44A1D4;
+.searcher{
+    width:448px;
+}
+
+.searcher-title{
+    margin-bottom:1em;
+}
+
+.searcher-link{
+    display:flex;
+    justify-content:center;
+    margin-bottom:1em;
+}
+
+.searcher-pic:hover{
+    border:2px outset #44A1D4;
+}
+
+.searcher-description{
+    font-weight:200;
+    text-align:left;
+    font-size:.85em;
 }
 
 img.github {
@@ -277,7 +278,7 @@ img.linkedin:hover {
 @media screen and (min-width:320px) and (max-width:1200px) {
 
     /*About*/
-    .aboutMe {
+    .aboutMe, .xp, .work {
         width: 75%;
         padding: 1em;
     }
@@ -292,9 +293,9 @@ img.linkedin:hover {
         letter-spacing: .05em;
     }
 
-    .xp {
-        width: 75%;
-        padding: 1em;
+    .tech{
+        display:flex;
+        flex-direction:column;
     }
 
     .xpTitle {
