@@ -14,3 +14,11 @@ xpTab.addEventListener("click",()=>{
     toggler.checked=false;
     xpSection.scrollIntoView({behavior:"smooth"});
 })
+
+const workTab = document.querySelector(".workTab");
+const workSection = document.querySelector(".work");
+
+workTab.addEventListener("click",()=>{
+    toggler.checked=false;
+    workSection.scrollIntoView({behavior:"smooth"});
+})
