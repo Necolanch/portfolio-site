@@ -167,6 +167,8 @@ img.bg {
 
 .examples{
     display:flex;
+    flex-direction:column;
+    align-items:center;
     justify-content:center;
     list-style:none;
     text-align:center;
@@ -175,6 +177,7 @@ img.bg {
 
 .searcher{
     width:448px;
+    margin-bottom:2em;
 }
 
 .searcher-title{
@@ -188,7 +191,7 @@ img.bg {
 }
 
 .searcher-pic:hover{
-    border:2px outset #44A1D4;
+    outline:3px outset #44A1D4;
 }
 
 .searcher-description{
@@ -340,6 +343,10 @@ img.linkedin:hover {
 
     .xp>p {
         font-size: .85em;
+    }
+
+    .searcher{
+        width:115%
     }
 
     .searcher-pic{
