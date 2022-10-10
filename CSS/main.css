@@ -184,20 +184,24 @@ img.bg {
     margin-bottom:1em;
 }
 
-.searcher-link{
-    display:flex;
-    justify-content:center;
+.searcher-pic{
     margin-bottom:1em;
 }
 
-.searcher-pic:hover{
-    outline:3px outset #44A1D4;
+.searcher-text{
+    text-decoration:none;
+    color:white;
+}
+
+.searcher-text:hover, .searcher-text:focus, .searcher-text:active{
+    color:#44A1D4;
 }
 
 .searcher-description{
     font-weight:200;
     text-align:left;
     font-size:.85em;
+    margin-top:1em;
 }
 
 img.github {
