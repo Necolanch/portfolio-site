@@ -1,5 +1,4 @@
 /*Global*/
-
 html {
     scroll-padding-top: 15em;
 }
@@ -25,9 +24,7 @@ img.bg {
     z-index: -1;
 }
 
-
 /*Navigation*/
-
 .navContainer {
     display: flex;
     position: sticky;
@@ -61,7 +58,6 @@ img.bg {
     cursor: pointer;
 }
 
-
 /*Hero Section*/
 
 .hero {
@@ -94,7 +90,6 @@ img.bg {
     font-family: "Futura", sans-serif;
     font-weight: 100;
 }
-
 
 /*About Section*/
 
