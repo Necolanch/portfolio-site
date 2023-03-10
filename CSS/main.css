@@ -116,7 +116,7 @@ img.bg {
     color: #C2BABA;
 }
 
-.aboutMe>p, .xp>p, .work>ul {
+.aboutMe>p, .xp>p, .xp>ul, .work>ul {
     font-family: "Futura", sans-serif;
     font-weight: 100;
     letter-spacing: .01em;
