@@ -161,6 +161,7 @@ img.bg {
 }
 
 .examples{
+    width:100%;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -171,7 +172,7 @@ img.bg {
 }
 
 .searcher{
-    width:448px;
+    width:100%;
     margin-bottom:2em;
 }
 
@@ -180,6 +181,7 @@ img.bg {
 }
 
 .searcher-pic{
+    width:90%;
     margin-bottom:1em;
 }
 
@@ -344,11 +346,17 @@ img.linkedin:hover {
         font-size: .85em;
     }
 
-    .searcher{
-        width:115%
+    .searcher-pic{
+        height:auto;
     }
 
-    .searcher-pic{
-        height:10%
+    .searcher{
+        margin-right:2.5em;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width:420px) {
+    .searcher{
+        width:120%
     }
 }
